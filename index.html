@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pay ModAppsKing via UPI</title>
+<style>
+  body{font-family:system-ui,-apple-system,sans-serif;background:#0f172a;color:#e2e8f0;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;padding:16px;}
+  .card{background:#1e293b;border-radius:16px;padding:32px;max-width:360px;width:100%;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.4);}
+  h1{font-size:20px;margin:0 0 4px;}
+  p{color:#94a3b8;font-size:14px;margin:4px 0 20px;word-break:break-all;}
+  a.btn{display:block;background:#7c3aed;color:#fff;text-decoration:none;font-weight:600;padding:14px;border-radius:10px;font-size:16px;}
+  small{color:#64748b;display:block;margin-top:14px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>ModAppsKing</h1>
+  <p>UPI ID: 20213904@axl</p>
+  <a class="btn" id="pay" href="upi://pay?pa=20213904@axl&pn=ModAppsKing&am=&tn=Support">Open UPI App to Pay</a>
+  <small>Choose any UPI app (PhonePe / GPay / Paytm) when prompted.</small>
+</div>
+<script>
+  // try auto-open immediately; button is the fallback if the browser blocks it
+  window.location.replace("upi://pay?pa=20213904@axl&pn=ModAppsKing&am=&tn=Support");
+</script>
+</body>
+</html>
